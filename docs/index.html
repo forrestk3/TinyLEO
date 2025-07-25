@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>TinyLEO</title>
+  <title>TinyLEO: Small-scale LEO Satellite Networking for Global-scale Demands</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -238,7 +238,7 @@
           </figure>
 
           <p style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.8; text-align: justify; max-width: 95%; margin-left: auto; margin-right: auto;">
-            TinyLEO combines diverse yet sparse orbits to complement each other for cutting satellite redundancy over space and time (akin to video compression). It can compress the existing LEO mega-constellation network size by 2.0–7.9×,while meeting the same broadband demands.
+            TinyLEO combines diverse yet sparse Earth-repeat orbits to cut satellite redundancy over space and time (akin to video compression). It can compress the existing LEO satellite mega-constellation network size by 2.0–7.9×, while meeting the same broadband demands.
           </p>
         </div>
       </div>
@@ -253,7 +253,7 @@
             <img src="static/images/control_plane.gif" style="height:100%; margin: 0 auto; display: block;">
           </figure>
           <p style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.8; text-align: justify; max-width: 95%; margin-left: auto; margin-right: auto;">
-            TinyLEO stabilizes high-level networking intents (demands) by satellite-independent geography and decouples them from their low-level dynamic enforcements (supplies). It avoids frequent geographic route updates under LEO dynamics, significantly reducing signaling overhead.
+            TinyLEO stabilizes high-level networking intents (demands) by satellite-independent geography and decouples them from their low-level dynamic enforcements (supplies). This avoids frequent geographic route updates under LEO dynamics, saving signaling costs by 1–3 orders of magnitude.
           </p>
         </div>
       </div>
@@ -268,7 +268,7 @@
             <img src="static/images/data_plane.gif" style="width: 100%; margin: 0 auto; display: block;">
           </figure>
           <p style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.8; text-align: justify; max-width: 95%; margin-left: auto; margin-right: auto;">
-            TinyLEO builds its data plane with geographic segment anycast (i.e., packets destined for a geographic cell can be forwarded to any satellite covering that cell). It can achieve near-stateless routing, high network availability and utilization, fast failure recovery, and low control overhead.
+            TinyLEO shifts the responsibility of handling the complex LEO network dynamics to data plane. Its near-stateless geographic segment anycast can enforce flexible, policy-compliant local (re)routing, load balancing, and fast recovery from failures (e.g., by solar storms and satellite link disruption).
           </p>
         </div>
       </div>
