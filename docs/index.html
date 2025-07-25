@@ -51,15 +51,7 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
-<!-- title -->
- <!-- <section style="padding: 2rem 2rem 1rem 2rem;">
-  <h1 class="title is-1 publication-title"
-      style="line-height: 1.4; font-weight: 800; text-align: center;">
-      TinyLEO
-  </h1>
-  <h1 class="title is-1 publication-title" style="text-align: center;" >Small-scale LEO Satellite Networking for Global-scale Demands</h1> 
 
-</section>-->
 
 <section style="padding: 3rem 1rem; text-align: center;">
   <h1 style="
@@ -100,10 +92,10 @@
                 <a href="http://www.yuanjiel.com/" target="_blank">Yuanjie Li</a>,</span>
               <span class="author-block">
                 <a href="https://cym-network.github.io/" target="_blank">Yimei Chen</a>,</span>
-              <span class="author-block" href="#"> <a>Jiabo Yang</a>,</span>
-              <span class="author-block" href="#"> <a>Jinyao Zhang</a>,</span>
-              <span class="author-block" href="#">
-                <a>Bowen Sun</a>,</span>
+              <span class="author-block"  > <a href="https://aha-young.github.io/" target="_blank">Jiabo Yang</a>,</span>
+              <span class="author-block" > <a href="https://yaoyao-zhang666.github.io/" target="_blank">Jinyao Zhang</a>,</span>
+              <span class="author-block" >
+                <a href="https://deemo385.github.io/" target="_blank">Bowen Sun</a>,</span>
               <br>
               <span class="author-block">
                 <a href="https://llxsd.github.io/" target="_blank">Lixin Liu</a>,</span>
@@ -113,10 +105,10 @@
                 <a href="https://www.cs.tsinghua.edu.cn/csen/info/1059/4003.htm" target="_blank">Jianping Wu</a>,</span>
               <span class="author-block" >
                 <a href="https://lzq8272587.github.io/" target="_blank">Zeqi Lai</a>,</span>
-              <span class="author-block" href="#">
-                <a>Qian Wu</a>,</span>
-              <span class="author-block" href="#">
-                <a>Jun Liu</a></span>
+              <span class="author-block" >
+                <a href="https://www.insc.tsinghua.edu.cn/inscen/info/1255/1067.htm" target="_blank">Qian Wu</a>,</span>
+              <span class="author-block" >
+                <a href="https://www.insc.tsinghua.edu.cn/inscen/info/1255/1093.htm" target="_blank">Jun Liu</a></span>
               
                   </div>
 
@@ -147,32 +139,9 @@
                     <span>Toolkit</span>
                   </a>
                 </span>
-
-                <!-- Youtube Link -->
-                <!-- <span class="link-block">
-                  <a href="https://youtu.be/nBvpF55NyP0" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Demo video</span>
-                </a>
-              </span> -->
-              
-              <!-- <span class="link-block">
-                  <a href="#"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-code"></i>
-                  </span>
-                  <span>Artifact (coming soon)</span>
-                </a>
-              </span>
-               -->
-
               <span class="link-block">
                   <a href="https://github.com/TinyLEO-toolkit/TinyLEO"
-                  class="external-link button is-normal is-rounded is-dark">
+                  class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                     <i class="fas fa-code"></i>
                   </span>
@@ -199,8 +168,6 @@
           <div class="publication-video">
             <!-- Youtube embed code here -->
              <iframe src="https://www.youtube.com/embed/nBvpF55NyP0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <!-- https://www.youtube.com/watch?v=nBvpF55NyP0" -->
-            <!--  -->
           </div>
           <h2 class="subtitle has-text-centered" style="margin-top:1rem">
          
@@ -227,17 +194,95 @@
   </div>
 </section>
 <!-- End paper abstract -->
- 
-<!-- <div class="container is-max-desktop">
-  <div class="has-text-centered">
-    <img src="static/images/overview.png" 
-         style="max-width: 80%; height: auto; display: inline-block;margin-top: 1rem" />
+
+<!-- Results highlights -->
+<section class="section is-white">
+  <style>
+.result-figure {
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.result-figure.single img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5 rem;
+}
+</style>
+
+
+
+  <div class="container">
+    <h2 class="title is-3 has-text-centered">Results</h2>
+
+    <div class="columns is-multiline">
+      <!-- first -->
+      <div class="column is-one-third">
+        <div class="box" style="height: 100%; padding: 1rem; background-color: #fafafa;">
+         <h3 class="has-text-weight-bold" style="color: #f39c12; text-align: center; font-size: 1.2rem;"> On-demand LEO Network Sparsification</h3>
+          <figure class="image result-figure single" style="margin-top: 2rem;">
+              <img src="static/images/synthesizer_results.gif" style="width: 100%; margin: 0 auto; display: block;">
+          </figure>
+
+          <p style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.8; text-align: justify; max-width: 95%; margin-left: auto; margin-right: auto;">
+            TinyLEO combines diverse yet sparse orbits to complement each other for cutting satellite redundancy over space and time (akin to video compression). It can compress the existing LEO mega-constellation network size by 2.0–7.9×,while meeting the same broadband demands.
+          </p>
+        </div>
+      </div>
+
+      <!-- second -->
+      <div class="column is-one-third">
+        <div class="box" style="height: 100%; padding: 1rem; background-color: #fafafa;">
+          <h3 class="has-text-weight-bold" style="color: #3498db; text-align: center; font-size: 1.2rem">
+            Control Plane: Stable Intent + Orbital MPC
+          </h3>
+          <figure class="image result-figure single" style="margin-top: 2rem;">
+            <img src="static/images/control_plane.gif" style="height:100%; margin: 0 auto; display: block;">
+          </figure>
+          <p style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.8; text-align: justify; max-width: 95%; margin-left: auto; margin-right: auto;">
+            TinyLEO stabilizes high-level networking intents (demands) by satellite-independent geography and decouples them from their low-level dynamic enforcements (supplies). It avoids frequent geographic route updates under LEO dynamics, significantly reducing signaling overhead.
+          </p>
+        </div>
+      </div>
+
+      <!-- third -->
+      <div class="column is-one-third">
+        <div class="box" style="height: 100%; padding: 1rem; background-color: #fafafa;">
+          <h3 class="has-text-weight-bold" style="color: #e74c3c; text-align: center; font-size: 1.2rem">
+            Data Plane: Geographic Segment Anycast
+          </h3>
+          <figure class="image result-figure single" style="margin-top: 2rem">
+            <img src="static/images/data_plane.gif" style="width: 100%; margin: 0 auto; display: block;">
+          </figure>
+          <p style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.8; text-align: justify; max-width: 95%; margin-left: auto; margin-right: auto;">
+            TinyLEO builds its data plane with geographic segment anycast (i.e., packets destined for a geographic cell can be forwarded to any satellite covering that cell). It can achieve near-stateless routing, high network availability and utilization, fast failure recovery, and low control overhead.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-</div> -->
+</section>
 
 
-<!-- Paper poster -->
-<section class="hero is-small is-white">
+
+
+
+
+<!-- Paper PDF -->
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container has-text-centered">
       <h2 class="title is-3">Paper<br>(Coming soon)</h2>
@@ -249,15 +294,19 @@
   </div>
 </section>
 
-<!--End paper poster -->
-<section class="hero is-small is-light">
+<!--End paper PDF -->
+
+<!-- End results highlights -->
+
+<!-- Toolkit -->
+<section class="hero is-small is-white">
   <div class="hero-body">
     <div class="container has-text-centered">
 
       <h2 class="title is-3">TinyLEO Community Toolkit</h2>
       <img src="static/images/toolkit.png" style="width: 60%; height: auto; margin: 0 auto; display: block;" />
 
-      <div class="content has-text-justified mt-5" style="line-height: 1.6; max-width: 800px; margin: 0 auto;">
+      <div class="content has-text-justified mt-5" style="line-height: 1.6; max-width: 900px; margin: 0 auto;">
         <p>
           TinyLEO is designed as an affordable, sustainable satellite network solution for small ISPs and countries. To achieve this goal and foster more community efforts in this direction, we have implemented all features in TinyLEO as a complete community toolkit for open research and experiments. Our community toolkit distinguishes itself from recent LEO network simulators since it not only supports packet-level data-plane tests, but also of- fers upstream LEO network planning and control-plane features. It also departs from current commercial TS-SDN controllers by offering geographic networking intent APIs and open-source or- bital MPC-based control logic. This toolkit can be used to synthesize sparse LEO networks on demand, specify high-level networking intents by geography, enforce these intents at runtime with orbital MPC, and conduct per-packet emulations with hardware in the loop (see <a href="https://github.com/TinyLEO-toolkit/TinyLEO" target="_blank" style="color: #1a73e8; text-decoration: underline;">TinyLEO-toolkit</a>  for details). 
         </p>
@@ -266,7 +315,7 @@
     </div>
   </div>
 </section>
-
+<!-- End Toolkit -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
